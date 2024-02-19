@@ -1,0 +1,27 @@
+@import '../../stylesGuide.scss';
+
+.mainButton{
+  background-color: $secondary-color-v1;
+  border: none;
+  @include font-style(null, 0.75rem, 700, null);
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+
+  &__dark-blue{
+    background-color: $primary-color-v1;
+  }
+  &__blindex{
+    background-color: $spotlight-color-blindex;
+  }
+  &__orange{
+    background-color: $spotlight-color-orange;
+  }
+
+
+  &__text {
+    color: $white-full;
+  }
+}

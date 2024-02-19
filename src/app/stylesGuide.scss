@@ -1,0 +1,22 @@
+$primary-color-v1: #0052E2;
+$primary-color-v2: #80A9F1;
+$primary-color-v3: #BFD3F7;
+
+$secondary-color-v1: #00B1FF;
+$secondary-color-v2: #80D8FF;
+$secondary-color-v3: #BFEBFF;
+
+$spotlight-color-orange: #FD5631; 
+$spotlight-color-blindex: #EE2E24;
+
+$title-color:#182D64;
+$text-color:#7581A1;
+
+$white-full: #ffff;
+
+@mixin font-style($family, $size, $weight, $lh) {
+  font-family: if($family == 'source', var(--font-source-sans-3), var(--font-public-sans));
+  font-size: if($size != null, $size, 1rem);
+  font-weight: if($weight != null, $weight, 400);
+  line-height: if($lh != null, $lh, 150%);
+}
